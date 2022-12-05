@@ -25,6 +25,7 @@ def test_sendForm(test_setup):
     driver.find_element(By.ID, contactPage.cookieForm).click()
     driver.find_element(By.NAME, contactPage.nameForm).send_keys(contactPage.name)
     driver.find_element(By.CLASS_NAME, contactPage.mailForm).send_keys(contactPage.mail)
+    time.sleep(3)
     driver.find_element(By.CLASS_NAME,contactPage.buttonForm).click()
     time.sleep(5)
     confirm = driver.find_element(By.CLASS_NAME,contactPage.confirmForm)
