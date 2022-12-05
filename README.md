@@ -4,4 +4,4 @@ Technologies used:
 - Visual Studio Code
 - Selenium
 - Pytest
-- ChromeDriver Manager
+- Webdriver-Manager
