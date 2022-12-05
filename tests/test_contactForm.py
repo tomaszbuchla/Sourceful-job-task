@@ -13,7 +13,7 @@ def test_setup():
     global driver
     service = ChromeService(executable_path=ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
-    driver.implicitly_wait(330)
+    driver.implicitly_wait(5)
     driver.maximize_window()
     yield
     driver.close()
